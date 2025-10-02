@@ -7,7 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity"
     android:layout_margin="10dp"
+    android:background="#FDFDFD"
     >
+
 
     <ImageView
         android:id="@+id/companyLogo"
@@ -24,9 +26,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:indeterminate="true"
         android:layout_below="@+id/companyLogo"
-        android:progressTint="#2c2c2c"
+
         />
+
+
 
 
 
