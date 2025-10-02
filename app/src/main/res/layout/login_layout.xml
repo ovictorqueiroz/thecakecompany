@@ -7,7 +7,9 @@
     android:layout_height="match_parent"
     android:layout_margin="10dp"
     android:background="#FDFDFD"
-    tools:context=".Login_Activity">
+    tools:context=".Login_Activity"
+    >
+
 
     <TextView
         android:id="@+id/companyName"
@@ -44,7 +46,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email">
+            android:hint="Email"
+            android:fontFamily="@font/bebasneuefont"
+            >
 
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
@@ -63,10 +67,29 @@
             android:layout_height="wrap_content"
             android:hint="Senha"
             android:inputType="textPassword"
+            android:fontFamily="@font/bebasneuefont"
             >
 
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/recoverPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recuperar Senha"
+        android:layout_below="@+id/passwordInput"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/bebasneuefont"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Since 2017"
+        android:fontFamily="@font/bebasneuefont"
+        android:textColor="#2c2c2"
 
 
 </RelativeLayout>
