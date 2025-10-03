@@ -36,7 +36,7 @@
         android:textSize="40sp"/>
 
       <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/emailInput"
+        android:id="@+id/txtInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/loginTxt"
@@ -44,6 +44,7 @@
         app:startIconDrawable="@drawable/email_icon">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
@@ -54,15 +55,17 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/emailInput"
+        android:layout_below="@+id/txtInput"
         android:layout_marginTop="25dp"
-        android:id="@+id/passwordInput"
         app:startIconDrawable="@drawable/password_icon"
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:textColorHighlight="#51331B"
+            android:id="@+id/passwordInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Senha"
@@ -78,7 +81,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Recuperar Senha"
-        android:layout_below="@+id/passwordInput"
+        android:layout_below="@+id/txtSenha"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/bebasneuefont"
 
