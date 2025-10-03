@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MenuPrincipalActivity"
     android:layout_margin="10dp"
+    android:orientation="vertical"
     >
 
     <RelativeLayout
@@ -16,8 +17,8 @@
 
         <ImageView
             android:id="@+id/companyLogo"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:src="@drawable/thecakecompany"
             android:scaleType="centerCrop"/>
 
@@ -30,9 +31,16 @@
             android:layout_toEndOf="@id/companyLogo"
             android:textAlignment="center"
             android:textSize="50dp"
+            android:layout_centerVertical="true"
             />
 
-
     </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        />
 
 </LinearLayout>
